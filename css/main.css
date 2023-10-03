@@ -812,7 +812,6 @@ header{
     padding: 20px 3px;
 }
 
-
 .Team .container .inimg{
     position: relative;
     width: 150px;
@@ -839,8 +838,9 @@ header{
     width: 100%;
     height: 100%;
     opacity: .7;
-    transition: .3s;
+    transition: 2s;
 }
+
 
 .Tcard2::after{
     position: absolute;
@@ -858,7 +858,7 @@ header{
     width: 100%;
     height: 100%;
     opacity: .7;
-    transition: .3s;
+    transition: 2s;
 }
 .Tcard3::after{
     position: absolute;
@@ -876,7 +876,7 @@ header{
     width: 100%;
     height: 100%;
     opacity: .7;
-    transition: .3s;
+    transition: 2s;
 }
 .Tcard4::after{
     position: absolute;
@@ -894,7 +894,7 @@ header{
     width: 100%;
     height: 100%;
     opacity: .7;
-    transition: .3s;
+    transition: 2s;
 }
 
 .Tcard1:hover .inimg{
@@ -919,6 +919,7 @@ header{
     opacity: .8;
     cursor: pointer;
 }
+
 
 .Tcard1 .img{
     background-image: url('../images/person.jpeg');
