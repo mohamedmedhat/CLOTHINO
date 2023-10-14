@@ -206,7 +206,7 @@ header{
 /* Home */
 
 .Home{
-    background-image: url('/images/Home3.jpg');
+    background-image: url('../images/Home3.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
@@ -481,7 +481,7 @@ header{
     position: relative;
     text-align: center;
     justify-content: center;
-    background-image: url('/images/numms.jpg');
+    background-image: url('../images/numms.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
@@ -563,32 +563,32 @@ header{
     position: relative;
 } 
 #card1{
-    background-image: url('/images/p1.png');
+    background-image: url('../images/p1.png');
     background-repeat: no-repeat;
     background-size: cover;
 }
 #card2{
-    background-image: url('/images/p2.png');
+    background-image: url('../images/p2.png');
     background-repeat: no-repeat;
     background-size: cover;
 }
 #card3{
-    background-image: url('/images/p3.png');
+    background-image: url('../images/p3.png');
     background-repeat: no-repeat;
     background-size: cover;
 }
 #card4{
-    background-image: url('/images/p4.png');
+    background-image: url('../images/p4.png');
     background-repeat: no-repeat;
     background-size: cover;
 }
 #card5{
-    background-image: url('/images/p5.png');
+    background-image: url('../images/p5.png');
     background-repeat: no-repeat;
     background-size: cover;
 }
 #card6{
-    background-image: url('/images/p6.png');
+    background-image: url('../images/p6.png');
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -922,7 +922,7 @@ header{
 
 
 .Tcard1 .img{
-    background-image: url('/images/person.jpeg');
+    background-image: url('../images/person.jpeg');
     background-size: cover;
     height: 150px;
     width: 150px;
@@ -931,7 +931,7 @@ header{
     outline: .1px solid #eae6e6;
 }
 .Tcard2 .img{
-    background-image: url('/images/person1.jpeg');
+    background-image: url('../images/person1.jpeg');
     background-size: cover;
     height: 150px;
     width: 150px;
@@ -939,7 +939,7 @@ header{
     border: .1px solid #dad6d6;
     outline: .1px solid #eae6e6;
 }.Tcard3 .img{
-    background-image: url('/images/person2.jpeg');
+    background-image: url('../images/person2.jpeg');
     background-size: cover;
     height: 150px;
     width: 150px;
@@ -947,7 +947,7 @@ header{
     border: .1px solid #dad6d6;
     outline: .1px solid #eae6e6;
 }.Tcard4 .img{
-    background-image: url('/images/person3.jpeg');
+    background-image: url('../images/person3.jpeg');
     background-size: cover;
     height: 150px;
     margin: auto;
