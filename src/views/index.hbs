@@ -1,0 +1,566 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../assets/css/main.css">
+    <link rel="stylesheet" href="../assets/css/all.css">
+    <link rel="icon" href="../assets/images/logo.png">
+    <title>CLOTHINO</title>
+</head>
+<body>
+    <!-- header -->
+    <header>
+        <div class="logo">
+            <img src="../assets/images/logo.png" alt="header logo" draggable="false"/>
+        </div>
+        <div class="links">
+            <ul>
+                <li><a href="#Home"><i class="fa-solid fa-house"></i> Home</a>
+                <div class="UnderLineHome"></div>
+                </li>
+                <li><a href="#About"><i class="fa-solid fa-address-card"></i> Services</a>
+                <div class="UnderLineHome"></div>
+                </li>
+                <li><a href="#Portfolio"><i class="fa-solid fa-id-badge"></i> Portfolio</a>
+                <div class="UnderLineHome"></div>
+                </li>
+                <li><a href="#Products"><i class="fa-solid fa-bolt"></i> Products</a>
+                <div class="UnderLineHome"></div>
+                </li>
+                <li><a href="#Prices"><i class="fa-solid fa-hand-holding-dollar"></i> Prices</a>
+                <div class="UnderLineHome"></div>
+                </li>
+                <li><a href="#Team"><i class="fa-solid fa-arrows-down-to-people"></i> Team</a>
+                <div class="UnderLineHome"></div>
+                </li>
+                <li><a href="#Blogs"><i class="fa-brands fa-blogger"></i> Blogs</a>
+                <div class="UnderLineHome"></div>
+                </li>
+                <li><a href="#Contact"><i class="fa-solid fa-paper-plane"></i> Contact</a>
+                <div class="UnderLineHome"></div>
+                </li>
+            </ul>
+        </div>
+        <div class="h-list">
+            <div class="searchItems">
+                <input type="search" placeholder=" what are you looking for ? ">
+                <i class='fa-solid fa-magnifying-glass'></i>
+            </div>
+            
+            <button><a href="login.html">Sign In</a></button>
+            <select name="" id="swapColor" style="width: 38px;height: 27px;">
+                <option value="">🌞</option>
+                <option value="">🌚</option>
+            </select>
+        </div>
+        <div class="ProfileSettings">
+            <i class="fa-solid fa-circle-user" id="userOut"></i>
+            <div class="ProfileOPtions">
+                <p>Profile</p>
+                <p>Settings</p>
+                <p>Review</p>
+                <p>Watch guests</p>
+                <p id="ProfileOPtionsdanger">Log Out</p>
+            </div>
+        </div>
+    </header>
+   
+
+    <!-- Home -->
+    <div class="Home" id="Home">
+       <div class="container">
+        <div class="h-text">
+            <h1 style="font-size: 34px;letter-spacing: 4px;">
+                <img src="../assets/images/HomeIMM.gif" class="HomeTxtImg"/>
+                Welcome to <span>CLOTHINO</span> Store</h1>
+            <h3>Trust and honesty is our slogan</h3>
+            <button class="btn1">Get Started!</button>
+            <button class="btn2">Learn More</button>
+        </div>
+       </div>
+       <a href="#Home" class="MoveTop"><i class="fa-solid fa-up-long"></i></a>
+        </div>
+    </div>
+    <!-- Services -->
+    <div class="About" id="About">
+        <p class="title">Discover Our Services</p>
+        <div class="titleLine"></div>
+        <div class="ACards">
+            <div class="A-card" id="A-card1">
+                <i class="fa-solid fa-hand-holding-dollar"></i><br>
+                <p class="ti">Installment</p>
+                <p class="desc">if you want to back or install<br> the product we provide this<br><br>
+                <a href="#">Read More ▶</a>
+                </p>
+            </div>
+            <div class="A-card">
+                <i class="fa-solid fa-truck-arrow-right"></i>
+                <p class="ti">Power Delivery</p>
+                <p class="desc">if you want to deliver or replace<br> the product we provide this<br><br>
+                    <a href="#">Read More ▶</a>
+                </p>
+            </div>
+            <div class="A-card">
+                <i class="fa-regular fa-handshake"></i>
+                <p class="ti">After-sales service</p>
+                <p class="desc">if you want to back or replace<br> the product we provide this<br><br>
+                <a href="#">Read More ▶</a>
+                </p>
+            </div>
+            <div class="A-card">
+                <i class="fa-brands fa-cc-paypal"></i>
+                <p class="ti">investment services</p>
+                <p class="desc">if you want to invest or participe<br>with a part profit we have this<br><br>
+                <a href="#">Read More ▶</a>
+                </p>
+            </div>
+        </div>
+    </div>
+   
+    <!-- Portfolio -->
+    <div class="Portfolio" id="Portfolio">
+        <div class="Ptext">
+            <h1>Why Choose Us!!!</h1>
+            <p>●<span class="spantwoo"> you will discover that all our products is high quality and comfortuble
+                in addition to very competetive price.</span><br/><br/>
+                → <span class="spanthreee">There are some reasons to choose us:</span><br/>
+               <span> ✓</span> All clothes are high quality <br/>
+               <span> ✓</span> All clothes are comfortable<br/>
+               <span> ✓</span> There are clothes suitable for all levels<br/>
+               <span> ✓</span> Our prices don't accept the comparation  
+            </p>
+        </div>
+        <div class="Pimg">
+            <img src="../assets/images/porto.png" alt="" draggable="false">
+                <div class="circlesimg">
+                    <div class="CimgC" id="active"></div>
+                    <div class="CimgC"></div>
+                    <div class="CimgC"></div>
+                </div>
+            
+        </div>
+    </div>
+    <div class="numbers">
+        <div class="title">{Statistics <i class="fa-solid fa-chart-simple"></i>}</div>
+        <div class="nums">
+            <div class="nu">
+                <i class="fa-solid fa-users-line"></i><br>
+                298K<br>
+                <span>Happy Clients</span>
+            </div>
+            <div class="nu">
+                <i class="fa-solid fa-trophy"></i><br>
+                12<br>
+               <span> Awards</span>
+            </div>
+            <div class="nu">
+                <i class="fa-solid fa-box-open"></i><br>
+                304K<br>
+               <span> Selled Clothes</span>
+            </div>
+            <div class="nu">
+                <i class="fa-solid fa-store"></i><br>
+                500K<br>
+                <span>Dealing With Shops</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Products -->
+    <div class="Products" id="Products">
+        <div class="container">
+            <input type="search" class="Prodsearch" 
+            placeholder="&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Search your favourite product🔍"/>
+            <div class="c1">
+                <div class="card" id="card1">
+                    <div class="inproducts">
+                        <div class="inproducthead">#id(5637838)</div>
+                        
+                        <div class="inproducticons">
+                            <i class="fa-solid fa-cart-shopping"></i>
+                            <i class="fa-solid fa-bookmark"></i>
+                            <i class="fa-solid fa-paper-plane"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="card" id="card2">
+                    
+                    <div class="inproducts">
+                        <div class="inproducthead">#id(5857838)</div>
+                        
+                        <div class="inproducticons">
+                            <i class="fa-solid fa-cart-shopping"></i>
+                            <i class="fa-solid fa-bookmark"></i>
+                            <i class="fa-solid fa-paper-plane"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="card" id="card3">
+                    
+                    <div class="inproducts">
+                        <div class="inproducthead">#id(5637068)</div>
+                        
+                        <div class="inproducticons">
+                            <i class="fa-solid fa-cart-shopping"></i>
+                            <i class="fa-solid fa-bookmark"></i>
+                            <i class="fa-solid fa-paper-plane"></i>
+                        </div>
+                    </div>
+                </div><br>
+            </div>
+            <div class="c2">
+                <div class="card" id="card4">
+                    <div class="inproducts">
+                        <div class="inproducthead">#id(0177838)</div>
+                        
+                        <div class="inproducticons">
+                            <i class="fa-solid fa-cart-shopping"></i>
+                            <i class="fa-solid fa-bookmark"></i>
+                            <i class="fa-solid fa-paper-plane"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="card" id="card5">
+                    <div class="inproducts">
+                        <div class="inproducthead">#id(5605038)</div>
+                        
+                        <div class="inproducticons">
+                            <i class="fa-solid fa-cart-shopping"></i>
+                            <i class="fa-solid fa-bookmark"></i>
+                            <i class="fa-solid fa-paper-plane"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="card" id="card6">
+                    <div class="inproducts">
+                        <div class="inproducthead">#id(5630008)</div>
+                        
+                        <div class="inproducticons">
+                            <i class="fa-solid fa-cart-shopping"></i>
+                            <i class="fa-solid fa-bookmark"></i>
+                            <i class="fa-solid fa-paper-plane"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr>
+    </div>
+    <!-- Prices -->
+    <div class="Prices" id="Prices">
+        <div class="card">
+            <p class="t-card">Offer1 <i class="fa-brands fa-cc-visa"></i></p>
+            <div class="circle">
+                <p>$9</p>
+                <h2>/MONTH</h2>
+            </div>
+            <div class="desc">
+                • 5% discount<br>• get free delivery once<br>• make size suitable <br>for your size once
+            </div>
+            <button>Order Now</button>
+        </div>
+        <div class="card">
+            <p class="t-card">Offer2 <i class="fa-brands fa-cc-visa"></i></p>
+            <div class="circle">
+                <p>$15</p>
+                <h2>/MONTH</h2>
+            </div>
+            <div class="desc">
+                • 15% discount<br>• get free delivery twice<br>• make size suitable <br>for your size twice
+            </div>
+            <button>Order Now</button>
+        </div>
+        <div class="card">
+            <p class="t-card">Offer3 <i class="fa-brands fa-cc-visa"></i></p>
+            <div class="circle">
+                <p>$23</p>
+                <h2>/MONTH</h2>
+            </div>
+            <div class="desc">
+                • 35% discount<br>• get free delivery always<br>• make size suitable <br>for your size always
+            </div>
+            <button>Order Now</button>
+        </div>
+        <div class="card" id="goldcard">
+            <p class="t-card">Offer4 <i class="fa-brands fa-cc-visa"></i></p>
+            <div class="circle">
+                <p>$25</p>
+                <h2>/MONTH</h2>
+            </div>
+            <div class="desc">
+                • 60% discount<br>• get free delivery always<br>• make size suitable <br>for your size always
+            </div>
+            <button>Order Now</button>
+        </div>
+        <img src="../assets/images/price1.png" alt="" class="SpecialOffer">
+    </div>
+    <hr>
+
+    <!-- Team -->
+    <div class="Team" id="Team">
+        <div class="contactTitle">
+            Our Team
+            <div class="contactTitleLine"></div>
+        </div>
+        <div class="container">
+            <div class="Tcard1">
+                <div class="img">
+                    <div class="inimg">
+                        <div class="inimgicons">
+                            <i class="fa-brands fa-facebook"></i>
+                    <i class="fa-brands fa-twitter"></i>
+                    <i class="fa-brands fa-linkedin"></i>
+                        </div>
+                    </div>
+                </div>
+                <p class="Tmain">
+                    Omar sallah
+                </p>
+                <p class="Tdesc">
+                    Designer
+                </p>
+            </div>
+            <div class="Tcard2">
+                <div class="img">
+                    <div class="inimg">
+                        <div class="inimgicons">
+                            <i class="fa-brands fa-facebook"></i>
+                    <i class="fa-brands fa-twitter"></i>
+                    <i class="fa-brands fa-linkedin"></i>
+                        </div>
+                    </div>
+                </div>
+                <p class="Tmain">
+                    Mark chemer
+                </p>
+                <p class="Tdesc">
+                    HR
+                </p>
+            </div>
+            <div class="Tcard3">
+                <div class="img">
+                    <div class="inimg">
+                        <div class="inimgicons">
+                            <i class="fa-brands fa-facebook"></i>
+                    <i class="fa-brands fa-twitter"></i>
+                    <i class="fa-brands fa-linkedin"></i>
+                        </div>
+                    </div>
+                </div>
+                <p class="Tmain">
+                    Soloyman Khan
+                </p>
+                <p class="Tdesc">
+                    Marketing manager
+                </p>
+            </div>
+            <div class="Tcard4">
+                <div class="img">
+                    <div class="inimg">
+                        <div class="inimgicons">
+                            <i class="fa-brands fa-facebook"></i>
+                    <i class="fa-brands fa-twitter"></i>
+                    <i class="fa-brands fa-linkedin"></i>
+                        </div>
+                    </div>
+                </div>
+                <p class="Tmain">
+                    Sameh Oghlo
+                </p>
+                <p class="Tdesc">
+                    The Manager
+                </p>
+            </div>
+        </div>
+    </div>
+    <hr>
+    <!-- Blogs -->
+    <div class="Blogs" id="Blogs">
+        <div class="contactTitle">
+            Our Blogs
+            <div class="contactTitleLine"></div>
+        </div>
+        <div class="container">
+            <div class="Bcard">
+                <div class="head">
+                    <img src="../assets/images/blog1.jpg" alt="">
+                    <div class="BlogsIcons">
+                        <i class="fa-solid fa-user-pen"></i>Ali
+                    <i class="fa-solid fa-clock"></i>12 DEC
+                    <i class="fa-solid fa-comments"></i>305
+                    </div>
+                </div>
+                <div class="desc">
+                    <div class="left"><p>◀</p></div>
+                    <span>Brands</span><br>
+                    <div class="desc1">
+                        Certainly! There are many clothing brands in the world, each with its own unique styleand target audience. Here are some of the most popular clothing  brands in the world brands in the world brands in the world brands in the world brands ....<br><br>
+                    <a href="#">Read More ▶</a>
+                    </div>
+                </div>
+            </div>
+            <div class="Bcard">
+                <div class="head">
+                    <img src="../assets/images/blog2.jpg" alt="">
+                    <div class="BlogsIcons">
+                        <i class="fa-solid fa-user-pen"></i>Amr
+                    <i class="fa-solid fa-clock"></i>30 SEP
+                    <i class="fa-solid fa-comments"></i>204
+                    </div>
+                </div>
+                <div class="desc">
+                    <span>Small Business</span><br>
+                    <div class="desc1">
+                        Dropshipping: This is a retail fulfillment method where a store doesn’t keep the products it sells in stock. Instead, when a store sells a product, it purchases the item from a third party and has it shipped directly to the customer try hekma ....<br><br>
+                        <a href="#">Read More ▶</a>
+                    </div>
+                </div>
+            </div>
+            <div class="Bcard">
+                <div class="head">
+                    <img src="../assets/images/blog3.jpg" alt="">
+                    <div class="BlogsIcons">
+                        <i class="fa-solid fa-user-pen"></i>Maram
+                    <i class="fa-solid fa-clock"></i>1 AUG
+                    <i class="fa-solid fa-comments"></i>200
+                    </div>
+                </div>
+                <div class="desc">
+                    <span>Perfium</span><br>
+                    <div class="desc1">
+                        Private label perfume manufacturing: This is a business model where you create perfumes, colognes, body sprays, and other fragrances to sell under another company’s brand name. This allows companies to offer a wider ....<br><br>
+                        <a href="#">Read More ▶</a>
+                    </div>
+                </div>
+            </div>
+            <div class="Bcard">
+                <div class="head">
+                    <img src="../assets/images/blog1.jpg" alt="">
+                    <div class="BlogsIcons">
+                        <i class="fa-solid fa-user-pen"></i>Ana
+                    <i class="fa-solid fa-clock"></i>4 NOV
+                    <i class="fa-solid fa-comments"></i>294
+                    </div>
+                </div>
+                <div class="desc">
+                    <span>Arrangment</span><br>
+                    <div class="desc1">
+                        There are many different types of business arrangements that you can choose from, depending on your needs and goals. Some common types of business arrangements include functional, product-based companies to offer a wider ....<br><br>
+                        <a href="#">Read More ▶</a>
+                    </div>
+                </div>
+            </div>
+            <div class="right"><p>▶</p></div>
+            </div>
+        </div>
+        <hr>
+        <!-- Rating -->
+        <div class="Rating">
+            <div class="contactTitle">
+               Our Customer Opinions
+                <div class="contactTitleLine"></div>
+            </div>
+            <div class="container">
+                <div class="uploadRating">
+                    <div class="Ratingimg">
+                        <p><i class="fa-solid fa-image"></i></p>
+                    </div>
+                    <input type="file" style="display: block;margin-bottom: 10px;">
+                    <div class="giveStars">
+                        <input type="range" style="display: block;margin-bottom: 10px;color: blue;">
+                        <div class="giveStarsIcons">
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        </div>
+                    </div>
+                    <textarea placeholder="give your opinion about our products" id="" cols="40" rows="10"></textarea>
+                    <button class="rateBtn">Submit</button>
+                    <input type="reset" class="reset">
+                </div>
+                <div class="showRating">
+                    <div class="rate">
+                        <div class="rateImg">
+                            <img src="../assets/images/rate1.jpg" alt="">
+                            <div class="rateTitle">
+                                <p>Mounir Amr</p>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                        </div>
+                        <div class="rateDesc">High quality products i enjoyed it.</div>
+                    </div>
+
+                    <div class="rate">
+                        <div class="rateImg">
+                            <img src="../assets/images/rate2.jpg" alt="">
+                            <div class="rateTitle">
+                                <p> Aly Nour</p>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star-half-stroke"></i>
+                             </div>
+                        </div>
+                        <div class="rateDesc">Excellent but children section need to be increased.</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr>
+    <!-- Contact -->
+    <div class="Contact" id="Contact">
+        <div class="contactTitle">
+            Contact Us
+            <div class="contactTitleLine"></div>
+        </div>
+       <div class="container">
+        <div class="contactImage">
+            <img src="../assets/images/typing1.gif" alt="" draggable="false">
+           </div>
+       <div class="contactInputs">
+        <label for="">First name: </label>
+        <input type="text">
+        <label for="">last name: </label>
+        <input type="text"><br/>
+        <label for="">Enter your Email: </label>
+        <input type="email" name="" id=""><br>
+        <textarea name="" id="" cols="50" rows="15" placeholder="Enter your message"></textarea><br/>
+        <button type="submit">submit</button>
+       </div>
+       </div>
+    </div>
+    <hr>
+    <!-- footer -->
+    <div class="footer">
+        <p class="rightfooter">
+        COPYRIGHT &copy; 2023 . ALL RIGHT RESERVED BY CLOTHINO<br>
+        <i class="fa-solid fa-code"></i> Mohamed Medhat
+        </p>
+        
+        <div class="vrLine"></div>
+        <div class="moreFooter">
+            <p>+9782567357</p>
+            <p><Address>Saint Remon,AL,Egypt</Address></p>
+        </div>
+        <div class="vrLine"></div>
+        <div class="socialMedia">
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-linkedin"></i>
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-youtube"></i>
+            <i class="fa-brands fa-google-plus-g"></i>
+        </div>
+    </div>
+    <script src="../assets/js/main.js"></script>
+</body>
+</html>

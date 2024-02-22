@@ -1,0 +1,125 @@
+//colors
+$formButtonColor:rgb(1, 1, 239);
+$containerColor:rgba(233, 239, 237, 0.7);
+
+@mixin centerItems{
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+
+body {
+  background-image: url("..images/Home3.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.container {
+  @include centerItems();
+  margin: auto;
+  background-color: $containerColor;
+  padding: 20px;
+  border: 0.2px solid $containerColor;
+  outline: 0.2px solid $containerColor;
+  border-radius: 6px;
+  margin-top: 160px;
+  width: 450px;
+
+  .img{
+    height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  align-items: center;
+  margin: 20px;
+  }
+
+  form{
+    padding: 10px;
+
+    input{
+      margin: 10px;
+  border-radius: 5px;
+  padding: 3px 7px;
+  background-color: rgba(241, 244, 243, 0.9);
+  font-family: sans-serif;
+  font-size: 15px;
+    }
+
+    button{
+      padding: 5px;
+      width: 130px;
+      font-weight: 600;
+      background-color: $formButtonColor;
+      border: 1px solid $formButtonColor;
+      border-radius: 5px;
+      color: white;
+      opacity: 0.7;
+      cursor: pointer;
+
+      &:hover .btn:hover{
+        opacity: 1;
+      }
+    }
+  }
+}
+
+.vrLine {
+  display: inline;
+  width: 100px;
+  height: 10px;
+  background-color: rgb(44, 44, 185);
+  margin: 0px 10px;
+}
+
+.signup {
+  text-decoration: none;
+
+  &:hover{
+    color: rgb(108, 5, 5);
+  }
+}
+
+.social {
+  display: flex;
+  margin: 20px;
+  gap: 20px;
+
+  a{
+    text-decoration: none;
+  margin: auto;
+  }
+}
+
+.sub-social {
+  display: flex;
+  border: 0.2px solid #898686;
+  border-radius: 20px;
+  gap: 5px;
+  padding: 0px 3px;
+  height: 30px;
+  margin: auto;
+
+  i{
+    color: rgb(6, 6, 6);
+  font-size: 18px;
+  margin-top: 13px;
+  margin: auto;
+  }
+
+  p{
+    font-size: 15px;
+  margin: auto;
+  }
+
+  &:hover{
+    background-color: rgb(39, 39, 186);
+  color: white;
+  }
+}
+
+.btn {
+  text-decoration: none;
+  color: white;
+}
+
