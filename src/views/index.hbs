@@ -174,9 +174,10 @@
             placeholder="&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Search your favourite product🔍"/>
             <div class="c1">
+                {{#each Products}}
                 <div class="card" id="card1">
                     <div class="inproducts">
-                        <div class="inproducthead">#id(5637838)</div>
+                        <div class="inproducthead">{{this.name}}</div>
                         
                         <div class="inproducticons">
                             <i class="fa-solid fa-cart-shopping"></i>
@@ -185,66 +186,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="card" id="card2">
-                    
-                    <div class="inproducts">
-                        <div class="inproducthead">#id(5857838)</div>
-                        
-                        <div class="inproducticons">
-                            <i class="fa-solid fa-cart-shopping"></i>
-                            <i class="fa-solid fa-bookmark"></i>
-                            <i class="fa-solid fa-paper-plane"></i>
-                        </div>
-                    </div>
-                </div>
-                <div class="card" id="card3">
-                    
-                    <div class="inproducts">
-                        <div class="inproducthead">#id(5637068)</div>
-                        
-                        <div class="inproducticons">
-                            <i class="fa-solid fa-cart-shopping"></i>
-                            <i class="fa-solid fa-bookmark"></i>
-                            <i class="fa-solid fa-paper-plane"></i>
-                        </div>
-                    </div>
-                </div><br>
-            </div>
-            <div class="c2">
-                <div class="card" id="card4">
-                    <div class="inproducts">
-                        <div class="inproducthead">#id(0177838)</div>
-                        
-                        <div class="inproducticons">
-                            <i class="fa-solid fa-cart-shopping"></i>
-                            <i class="fa-solid fa-bookmark"></i>
-                            <i class="fa-solid fa-paper-plane"></i>
-                        </div>
-                    </div>
-                </div>
-                <div class="card" id="card5">
-                    <div class="inproducts">
-                        <div class="inproducthead">#id(5605038)</div>
-                        
-                        <div class="inproducticons">
-                            <i class="fa-solid fa-cart-shopping"></i>
-                            <i class="fa-solid fa-bookmark"></i>
-                            <i class="fa-solid fa-paper-plane"></i>
-                        </div>
-                    </div>
-                </div>
-                <div class="card" id="card6">
-                    <div class="inproducts">
-                        <div class="inproducthead">#id(5630008)</div>
-                        
-                        <div class="inproducticons">
-                            <i class="fa-solid fa-cart-shopping"></i>
-                            <i class="fa-solid fa-bookmark"></i>
-                            <i class="fa-solid fa-paper-plane"></i>
-                        </div>
-                    </div>
-                </div>
-            </div>
+                {{/each}}
         </div>
         <hr>
     </div>
@@ -305,6 +247,7 @@
             <div class="contactTitleLine"></div>
         </div>
         <div class="container">
+            {{#each Team}}
             <div class="Tcard1">
                 <div class="img">
                     <div class="inimg">
@@ -316,63 +259,13 @@
                     </div>
                 </div>
                 <p class="Tmain">
-                    Omar sallah
+                    {{this.name}}
                 </p>
                 <p class="Tdesc">
-                    Designer
+                    {{this.desc}}
                 </p>
             </div>
-            <div class="Tcard2">
-                <div class="img">
-                    <div class="inimg">
-                        <div class="inimgicons">
-                            <i class="fa-brands fa-facebook"></i>
-                    <i class="fa-brands fa-twitter"></i>
-                    <i class="fa-brands fa-linkedin"></i>
-                        </div>
-                    </div>
-                </div>
-                <p class="Tmain">
-                    Mark chemer
-                </p>
-                <p class="Tdesc">
-                    HR
-                </p>
-            </div>
-            <div class="Tcard3">
-                <div class="img">
-                    <div class="inimg">
-                        <div class="inimgicons">
-                            <i class="fa-brands fa-facebook"></i>
-                    <i class="fa-brands fa-twitter"></i>
-                    <i class="fa-brands fa-linkedin"></i>
-                        </div>
-                    </div>
-                </div>
-                <p class="Tmain">
-                    Soloyman Khan
-                </p>
-                <p class="Tdesc">
-                    Marketing manager
-                </p>
-            </div>
-            <div class="Tcard4">
-                <div class="img">
-                    <div class="inimg">
-                        <div class="inimgicons">
-                            <i class="fa-brands fa-facebook"></i>
-                    <i class="fa-brands fa-twitter"></i>
-                    <i class="fa-brands fa-linkedin"></i>
-                        </div>
-                    </div>
-                </div>
-                <p class="Tmain">
-                    Sameh Oghlo
-                </p>
-                <p class="Tdesc">
-                    The Manager
-                </p>
-            </div>
+           {{/each}}
         </div>
     </div>
     <hr>
@@ -526,7 +419,9 @@
         <div class="contactImage">
             <img src="../assets/images/typing1.gif" alt="" draggable="false">
            </div>
-       <div class="contactInputs">
+
+        <form action="/submit-contactForm" method="POST"></form>
+        <div class="contactInputs">
         <label for="">First name: </label>
         <input type="text">
         <label for="">last name: </label>
@@ -536,6 +431,7 @@
         <textarea name="" id="" cols="50" rows="15" placeholder="Enter your message"></textarea><br/>
         <button type="submit">submit</button>
        </div>
+       </form>
        </div>
     </div>
     <hr>

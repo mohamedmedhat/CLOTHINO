@@ -1,5 +1,5 @@
 import { NestFactory } from '@nestjs/core';
-import { AppModule } from './app.module';
+import { AppModule } from './modules/app.module';
 import * as express from 'express';
 import { join } from 'path';
 import helmet from 'helmet';

@@ -6,6 +6,6 @@ import { join } from 'path';
 export class HtmlController {
     @Get()
     root(@Res() res: Response): void{
-        res.sendFile(join(__dirname,'..','views','index.html'));
+        res.sendFile(join(__dirname,'..','views','index.hbs'));
     }
 }

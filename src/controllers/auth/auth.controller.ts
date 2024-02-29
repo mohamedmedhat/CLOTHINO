@@ -1,4 +1,4 @@
-import { Controller, Post, UseGuards } from '@nestjs/common';
+import { Controller, Post, Render, UseGuards } from '@nestjs/common';
 import { AuthGuard } from '@nestjs/passport';
 import { AuthService } from './auth.service';
 import { CreateUserDto } from 'src/models/register/Dto/createUser.dto';
@@ -8,7 +8,8 @@ export class AuthController {
     constructor(private readonly authService: AuthService){}
 
     @UseGuards(AuthGuard('local'))
-    @Post('/login')
+    @Post()
+    @Render('/auth/index')
     async Login(email:string, password:string){
         return this.authService.LogIn(email,password);
     }

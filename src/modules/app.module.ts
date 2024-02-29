@@ -1,17 +1,17 @@
 import { Module } from '@nestjs/common';
-import { AppController } from './app.controller';
-import { AppService } from './app.service';
-import { HtmlController } from './controllers/html.controller';
-import { AuthModule } from './modules/auth.module';
-import { AuthController } from './controllers/auth/auth.controller';
-import { MainController } from './controllers/main/main.controller';
-import { MainService } from './controllers/main/main.service';
-import { AuthService } from './controllers/auth/auth.service';
-import { MainModule } from './modules/main.module';
+import { AppController } from '../app.controller';
+import { AppService } from '../app.service';
+import { HtmlController } from '../controllers/html.controller';
+import { AuthModule } from './auth.module';
+import { AuthController } from '../controllers/auth/auth.controller';
+import { MainController } from '../controllers/main/main.controller';
+import { MainService } from '../controllers/main/main.service';
+import { AuthService } from '../controllers/auth/auth.service';
+import { MainModule } from './main.module';
 import { ConfigModule } from '@nestjs/config';
 import { ThrottlerModule } from '@nestjs/throttler';
 import { TypeOrmModule } from '@nestjs/typeorm';
-import { Register } from './models/register/Entities/reg.entity';
+import { Register } from '../models/register/Entities/reg.entity';
 
 @Module({
   imports: [
@@ -44,7 +44,7 @@ import { Register } from './models/register/Entities/reg.entity';
       synchronize: true,
     }),
     AuthModule,MainModule],
-  controllers: [AppController, HtmlController, AuthController, MainController],
-  providers: [AppService, MainService, AuthService],
+  controllers: [AppController, HtmlController],
+  providers: [AppService],
 })
 export class AppModule {}
